@@ -10,6 +10,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>stream-common</module>
+        <module>stream-realtime</module>
+        <module>custom-func</module>
+        <module>stream-deploy</module>
+        <module>stream-ml</module>
     </modules>
 
     <properties>
@@ -35,6 +39,7 @@
     <dependencyManagement>
         <dependencies>
             <!-- flink 相关依赖 开始 -->
+
 
             <dependency>
                 <groupId>org.apache.flink</groupId>
