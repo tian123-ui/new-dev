@@ -8,7 +8,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * TODO:用途：配置文件工具类
+ *
+ * TODO：用途：配置文件工具类。
  *  功能：
  *  加载 application.properties 或 YAML 配置。
  *  动态获取配置项（如数据库连接信息）。
