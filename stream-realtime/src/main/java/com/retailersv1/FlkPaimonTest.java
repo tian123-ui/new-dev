@@ -6,7 +6,12 @@ import lombok.SneakyThrows;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 
-
+/**
+ * @Package com.retailersv1.FlkPaimonTest
+ * @Author zhou.han
+ * @Date 2025/4/6 22:44
+ * @description: Flink SQL Paimon Test
+ */
 public class FlkPaimonTest {
 
     @SneakyThrows

@@ -8,11 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * TODO:用途：JDBC 数据库连接工具类。
- *  功能：
- *     获取数据库连接、执行 SQL语句。
- *     结果集处理、事务管理。
- *  典型场景：传统关系型数据库交互。
+ * @Package com.stream.common.utils.JdbcUtils
+ * @Author zhou.han
+ * @Date 2024/12/20 08:51
+ * @description: MySQL Utils
  */
 public class JdbcUtils {
 

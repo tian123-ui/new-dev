@@ -3,7 +3,12 @@ package com.label.func;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.flink.api.common.functions.RichMapFunction;
 
-
+/**
+ * @Package com.label.func.MapOrderDetailDs
+ * @Author zhou.han
+ * @Date 2025/5/14 22:10
+ * @description:
+ */
 public class MapOrderDetailFunc extends RichMapFunction<JSONObject,JSONObject> {
     @Override
     public JSONObject map(JSONObject jsonObject) throws Exception {

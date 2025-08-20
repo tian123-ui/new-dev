@@ -1,10 +1,10 @@
 package com.label.func;
 
 import com.alibaba.fastjson.JSONObject;
-import com.label.domain.DimBaseCategory;
 import com.label.domain.DimSkuInfoMsg;
 import com.stream.common.utils.ConfigUtils;
 import com.stream.common.utils.JdbcUtils;
+import com.label.domain.DimBaseCategory;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.configuration.Configuration;
 
@@ -13,7 +13,12 @@ import java.math.RoundingMode;
 import java.sql.Connection;
 import java.util.List;
 
-
+/**
+ * @Package com.label.func.MapOrderAndDetailRateModelFunc
+ * @Author zhou.han
+ * @Date 2025/5/15 08:40
+ * @description:
+ */
 public class MapOrderAndDetailRateModelFunc extends RichMapFunction<JSONObject,JSONObject> {
 
     private Connection connection;

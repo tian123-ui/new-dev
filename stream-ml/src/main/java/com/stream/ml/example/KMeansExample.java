@@ -11,7 +11,12 @@ import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.types.Row;
 import org.apache.flink.util.CloseableIterator;
 
-
+/**
+ * @Package com.stream.ml.example.KMeansExample
+ * @Author zhou.han
+ * @Date 2025/6/9 20:06
+ * @description:
+ */
 public class KMeansExample {
 
     public static void main(String[] args) {

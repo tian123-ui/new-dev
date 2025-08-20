@@ -8,7 +8,12 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 
-
+/**
+ * @Package com.label.func.MapOrderInfoData
+ * @Author zhou.han
+ * @Date 2025/5/14 14:10
+ * @description:
+ */
 public class MapOrderInfoDataFunc extends RichMapFunction<JSONObject,JSONObject> {
     @Override
     public JSONObject map(JSONObject jsonObject) throws Exception {

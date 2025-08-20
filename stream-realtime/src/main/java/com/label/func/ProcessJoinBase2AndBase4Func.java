@@ -4,7 +4,12 @@ import com.alibaba.fastjson.JSONObject;
 import org.apache.flink.streaming.api.functions.co.ProcessJoinFunction;
 import org.apache.flink.util.Collector;
 
-
+/**
+ * @Package com.label.func.Join2_4Process
+ * @Author zhou.han
+ * @Date 2025/5/15 16:06
+ * @description:
+ */
 public class ProcessJoinBase2AndBase4Func extends ProcessJoinFunction<JSONObject, JSONObject, JSONObject> {
 
     private static final String[] list2 = {"18_24", "25_29", "30_34", "35_39", "40_49", "50"};

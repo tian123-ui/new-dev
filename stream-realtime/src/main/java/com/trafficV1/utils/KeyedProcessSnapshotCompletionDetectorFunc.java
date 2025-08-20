@@ -14,6 +14,9 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
+ * @Package com.trafficV1.utils.KeyedProcessSnapshotCompletionDetectorFunc
+ * @Author zhou.han
+ * @Date 2025/8/14 14:55
  * @description: 检测cdc状态为r的快照数据是否完成
  */
 public class KeyedProcessSnapshotCompletionDetectorFunc extends KeyedProcessFunction<String, JSONObject,JSONObject> {

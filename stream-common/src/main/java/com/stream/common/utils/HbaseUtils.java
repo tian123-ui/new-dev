@@ -1,11 +1,13 @@
 package com.stream.common.utils;
 
+import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.crypto.SecureUtil;
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Lists;
+import com.stream.common.domain.HBaseInfo;
 import lombok.SneakyThrows;
-import org.apache.hadoop.hbase.CellUtil;
-import org.apache.hadoop.hbase.HBaseConfiguration;
-import org.apache.hadoop.hbase.HConstants;
-import org.apache.hadoop.hbase.TableName;
+import org.apache.flink.api.java.tuple.Tuple3;
+import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.filter.FirstKeyOnlyFilter;
 import org.apache.hadoop.hbase.io.compress.Compression;
@@ -14,17 +16,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.Executors;
+
+import static org.apache.hadoop.hbase.CellUtil.cloneQualifier;
+import static org.apache.hadoop.hbase.CellUtil.cloneValue;
 
 /**
- * TODO:用途：HBase 数据库操作工具类。
- *   功能：
- *       简化 HBase 表的增删改查。
- *       批量操作、扫描过滤器配置。
- *   典型场景：高频数据查询场景（如用户画像）。
+ * @author han.zhou
+ * @time: 2021/10/14 11:39
+ * @className: HBaseUtils
+ * @description HBase 工具类
  */
 public class HbaseUtils {
     private Connection connection;

@@ -2,6 +2,7 @@ package com.stream.common.utils;
 
 import cn.hutool.core.date.DateUtil;
 import com.alibaba.fastjson.JSON;
+
 import com.stream.common.domain.HdfsInfo;
 import org.apache.flink.api.common.serialization.SimpleStringEncoder;
 import org.apache.flink.core.fs.Path;
@@ -16,12 +17,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * TODO:用途：HDFS 文件系统操作工具类。
- *  功能：
- *     文件上传/下载、目录创建/删除。
- *     HDFS
- *     与本地文件同步。
- *  典型场景：大数据离线处理（如 Hive 表数据备份）。
+ * @author han.zhou
  **/
 public class HdfsUtils {
 
