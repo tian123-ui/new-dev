@@ -19,12 +19,14 @@ import org.apache.hadoop.hbase.util.MD5Hash;
 
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-
+/**
+ * @Package com.retailersv1.func.ProcessSpiltStreamToHBaseDim
+ * @Author zhou.han
+ * @Date 2024/12/19 22:55
+ * @description:
+ */
 public class ProcessSpiltStreamToHBaseDimFunc extends BroadcastProcessFunction<JSONObject,JSONObject,JSONObject> {
 
     private MapStateDescriptor<String,JSONObject> mapStateDescriptor;

@@ -5,7 +5,12 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.table.catalog.hive.HiveCatalog;
 
-
+/**
+ * @Package com.retailersv1.TestFlinkSQLAPI
+ * @Author zhou.han
+ * @Date 2024/12/28 08:58
+ * @description:
+ */
 public class TestFlinkSQLAPI {
     @SneakyThrows
     public static void main(String[] args) {

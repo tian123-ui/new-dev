@@ -1,13 +1,20 @@
 package com.stream.utils;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import com.alibaba.fastjson.JSONObject;
+import org.checkerframework.common.reflection.qual.GetClass;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-
+/**
+ * @Package com.stream.utils.SensitiveWordsUtils
+ * @Author zhou.han
+ * @Date 2025/3/16 21:58
+ * @description: sensitive words
+ */
 public class SensitiveWordsUtils {
 
 

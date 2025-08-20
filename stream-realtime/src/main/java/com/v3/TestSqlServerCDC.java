@@ -10,7 +10,12 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import java.util.Properties;
 
 
-
+/**
+ * @Package com.v3.TestSqlServerCDC
+ * @Author zhou.han
+ * @Date 2025/7/23 15:08
+ * @description:
+ */
 public class TestSqlServerCDC {
 
     @SneakyThrows

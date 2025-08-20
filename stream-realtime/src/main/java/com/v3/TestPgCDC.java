@@ -1,4 +1,5 @@
 package com.v3;
+import com.stream.common.utils.EnvironmentSettingUtils;
 import com.ververica.cdc.connectors.base.options.StartupOptions;
 import com.ververica.cdc.connectors.base.source.jdbc.JdbcIncrementalSource;
 import com.ververica.cdc.connectors.postgres.source.PostgresSourceBuilder;
@@ -8,7 +9,12 @@ import lombok.SneakyThrows;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-
+/**
+ * @Package com.v3.TestPgCDC
+ * @Author zhou.han
+ * @Date 2025/7/23 10:59
+ * @description:
+ */
 public class TestPgCDC {
     @SneakyThrows
     public static void main(String[] args) {

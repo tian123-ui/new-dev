@@ -7,7 +7,12 @@ import org.apache.flink.util.Collector;
 
 import java.util.Date;
 
-
+/**
+ * @Package com.label.func.FinalProcess
+ * @Author zhou.han
+ * @Date 2025/5/15 17:18
+ * @description:
+ */
 public class ProcessLabelFunc extends ProcessJoinFunction<JSONObject, JSONObject, JSONObject> {
     @Override
     public void processElement(JSONObject left, JSONObject right, ProcessJoinFunction<JSONObject, JSONObject, JSONObject>.Context context, Collector<JSONObject> collector) throws Exception {

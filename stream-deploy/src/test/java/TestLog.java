@@ -1,10 +1,16 @@
+import com.zh.deploy.FlinkJobSubmitToYarnApplicationModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-
+/**
+ * @Package PACKAGE_NAME.TestLog
+ * @Author zhou.han
+ * @Date 2025/1/2 09:55
+ * @description:
+ */
 public class TestLog {
     private static final Logger LOG = LoggerFactory.getLogger(TestLog.class.getName());
     public static void main(String[] args) throws UnsupportedEncodingException {

@@ -1,7 +1,12 @@
 
 import java.sql.*;
 
-
+/**
+ * @Package PACKAGE_NAME.ReadDorsiTest
+ * @Author zhou.han
+ * @Date 2025/2/12 18:01
+ * @description:
+ */
 
 public class ReadDorisTest {
     // JDBC 连接参数

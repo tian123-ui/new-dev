@@ -6,7 +6,12 @@ import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
 import org.apache.flink.util.OutputTag;
 
-
+/**
+ * @Package com.retailersv1.func.ProcessSplitStream
+ * @Author zhou.han
+ * @Date 2024/12/24 11:58
+ * @description:
+ */
 public class ProcessSplitStreamFunc extends ProcessFunction<JSONObject,String> {
 
     private OutputTag<String> errTag;

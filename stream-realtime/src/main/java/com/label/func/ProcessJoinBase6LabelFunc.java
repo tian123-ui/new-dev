@@ -9,7 +9,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * @Package com.label.func.ProcessJoinBase6LabelFunc
+ * @Author zhou.han
+ * @Date 2025/5/16 14:04
+ * @description:
+ */
 public class ProcessJoinBase6LabelFunc extends ProcessJoinFunction<JSONObject,JSONObject,JSONObject> {
     @Override
     public void processElement(JSONObject value1, JSONObject value2, ProcessJoinFunction<JSONObject, JSONObject, JSONObject>.Context context, Collector<JSONObject> collector) throws Exception {
