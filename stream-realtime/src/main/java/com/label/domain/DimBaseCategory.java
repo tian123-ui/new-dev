@@ -6,6 +6,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * @Package com.label.domain.DimBaseCategory
+ * @Author zhou.han
+ * @Date 2025/5/14 08:40
+ * @description: base category all data
+ */
 
 @AllArgsConstructor
 @NoArgsConstructor

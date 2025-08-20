@@ -6,7 +6,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-
+/**
+ * @Package com.label.domain.DimSkuInfoMsg
+ * @Author zhou.han
+ * @Date 2025/5/15 09:10
+ * @description:
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

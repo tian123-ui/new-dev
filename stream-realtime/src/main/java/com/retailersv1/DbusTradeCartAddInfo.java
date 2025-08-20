@@ -24,7 +24,12 @@ import java.time.Duration;
 import java.util.Date;
 
 
-
+/**
+ * @Package com.retailersv1.DbusTradeCartAddInfo
+ * @Author zhou.han
+ * @Date 2025/4/7 21:11
+ * @description: Task 05
+ */
 public class DbusTradeCartAddInfo {
 
     private static final String kafka_botstrap_servers = ConfigUtils.getString("kafka.bootstrap.servers");

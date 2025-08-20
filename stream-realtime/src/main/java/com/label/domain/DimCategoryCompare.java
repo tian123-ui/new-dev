@@ -4,7 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
+/**
+ * @Package com.label.domain.DimCategoryCompare
+ * @Author zhou.han
+ * @Date 2025/5/14 10:57
+ * @description:
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

@@ -1,17 +1,18 @@
 package com.stream.common.utils;
 
 import com.alibaba.fastjson.JSONObject;
+import org.apache.hadoop.hbase.ClassFinder;
 
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Properties;
 
 /**
- * TODO:用途：文件系统操作工具类。
- *  功能：
- *     文件读写、复制、删除、压缩。
- *     目录遍历、大小计算。
- *  典型场景：日志文件处理、临时文件管理。
+ * @Package com.stream.common.utils.FileUtils
+ * @Author zhou.han
+ * @Date 2024/11/20 10:48
+ * @description: File Utils
  */
 public class FileUtils {
 

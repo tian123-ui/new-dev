@@ -2,13 +2,13 @@ package com.label;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.label.domain.DimBaseCategory;
 import com.label.func.*;
-import com.retailersv1.func.ProcessFilterRepeatTsDataFunc;
+import com.retailersv1.func.*;
 import com.stream.common.utils.ConfigUtils;
 import com.stream.common.utils.EnvironmentSettingUtils;
 import com.stream.common.utils.JdbcUtils;
 import com.stream.common.utils.KafkaUtils;
+import com.label.domain.DimBaseCategory;
 import lombok.SneakyThrows;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.RichMapFunction;
@@ -29,7 +29,12 @@ import java.util.Date;
 import java.util.List;
 
 
-
+/**
+ * @Package com.label.DbusUserInfo6BaseLabel
+ * @Author zhou.han
+ * @Date 2025/5/12 10:01
+ * @description: 01 Task 6 BaseLine
+ */
 
 public class DbusUserInfo6BaseLabel2Kafka {
 

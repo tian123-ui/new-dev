@@ -4,18 +4,10 @@ import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-/**
- * TODO: 用途：Base58 编码与解码工具类。
- *   功能：
- *   将字节数组转换为 Base58 字符串。
- *   将 Base58 字符串解析为字节数组。
- *   典型场景：区块链地址生成（如比特币、以太坊）、短链接生成等
- */
 public class Base58 {
     public static final char[] ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
             .toCharArray();
     private static final int[] INDEXES = new int[128];
-
 
     static {
         Arrays.fill(INDEXES, -1);

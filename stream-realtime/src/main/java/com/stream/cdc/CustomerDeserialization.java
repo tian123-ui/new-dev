@@ -14,7 +14,12 @@ import org.apache.kafka.connect.source.SourceRecord;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * @Package com.zh.flk.cdc.CustomerDeserialization
+ * @Author zhou.han
+ * @Date 2024/10/10 17:29
+ * @description: cdc 自定义序列化
+ */
 public class CustomerDeserialization implements DebeziumDeserializationSchema<String> {
     @Override
     public void deserialize(SourceRecord sourceRecord, Collector<String> collector) throws Exception {

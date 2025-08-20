@@ -1,12 +1,19 @@
 package com.retailersv1.catalog.ddl.hbase;
 
 import com.stream.common.utils.ConfigUtils;
+import com.stream.common.utils.FlinkEnvUtils;
 import com.stream.utils.HiveCatalogUtils;
+import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.table.catalog.hive.HiveCatalog;
 
-
+/**
+ * @Package com.retailersv1.catalog.ddl.hbase.CreateHbaseDimDDLCataLog
+ * @Author zhou.han
+ * @Date 2024/12/28 17:55
+ * @description: Hbase Dim Catalog
+ */
 public class CreateHbaseDimDDLCataLog {
     private static final String HBASE_NAME_SPACE = ConfigUtils.getString("hbase.namespace");
     private static final String ZOOKEEPER_SERVER_HOST_LIST = ConfigUtils.getString("zookeeper.server.host.list");

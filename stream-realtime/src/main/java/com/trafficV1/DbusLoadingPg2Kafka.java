@@ -20,7 +20,12 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import java.time.Duration;
 import java.util.Objects;
 
-
+/**
+ * @Package com.trafficV1.DbusLoadingPg2Kafka
+ * @Author zhou.han
+ * @Date 2025/8/7 20:43
+ * @description: Loading Postgresql & Task 01
+ */
 public class DbusLoadingPg2Kafka {
 
     private static final String kafka_botstrap_servers = ConfigUtils.getString("kafka.bootstrap.servers");

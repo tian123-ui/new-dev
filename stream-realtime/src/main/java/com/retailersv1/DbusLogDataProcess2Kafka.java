@@ -24,9 +24,9 @@ import java.util.Date;
 import java.util.HashMap;
 
 /**
- * @Package com.retailersv1.DbusLogDataProcess2Kafka
- *  读取kafak， 分流
+ * kafka 数据处理 分流
  */
+
 
 public class DbusLogDataProcess2Kafka {
 

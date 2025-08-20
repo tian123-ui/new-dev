@@ -6,16 +6,23 @@ import io.debezium.data.Envelope;
 import org.apache.flink.api.common.typeinfo.BasicTypeInfo;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.util.Collector;
+import org.apache.kafka.connect.source.SourceRecord;
+import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson2.JSONWriter;
 import org.apache.kafka.connect.data.Field;
 import org.apache.kafka.connect.data.Schema;
 import org.apache.kafka.connect.data.Struct;
-import org.apache.kafka.connect.source.SourceRecord;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
-
+/**
+ * @Package com.v3.CustomerDeserializationSchemaSqlserver
+ * @Author zhou.han
+ * @Date 2025/7/23 15:28
+ * @description:
+ */
 public class CustomerDeserializationSchemaSqlserver implements DebeziumDeserializationSchema<String> {
     private static final long serialVersionUID = -1L;
     @Override

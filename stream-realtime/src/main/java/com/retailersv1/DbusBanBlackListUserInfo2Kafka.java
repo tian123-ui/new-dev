@@ -14,11 +14,17 @@ import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.connector.kafka.source.enumerator.initializer.OffsetsInitializer;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-
 import java.util.Date;
 import java.util.List;
 
-
+/**
+ * @Package com.retailersv1.DbusBanBlackListUserInfo2Kafka
+ * @Author zhou.han
+ * @Date 2025/3/29 15:09
+ * @description: 黑名单封禁 Task 04
+ * @Test
+ * DataStreamSource<String> kafkaCdcDbSource = env.socketTextStream("127.0.0.1", 9999);
+ */
 public class DbusBanBlackListUserInfo2Kafka {
 
     private static final String kafka_botstrap_servers = ConfigUtils.getString("kafka.bootstrap.servers");

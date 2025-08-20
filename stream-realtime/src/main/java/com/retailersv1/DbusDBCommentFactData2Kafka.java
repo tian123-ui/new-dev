@@ -15,12 +15,10 @@ import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.connector.kafka.source.enumerator.initializer.OffsetsInitializer;
-import org.apache.flink.streaming.api.datastream.AsyncDataStream;
-import org.apache.flink.streaming.api.datastream.DataStream;
-import org.apache.flink.streaming.api.datastream.KeyedStream;
-import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
+import org.apache.flink.streaming.api.datastream.*;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
+
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -30,9 +28,16 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Package com.retailersv1.DbusDBCommentFactData2Kafka
+ * @Author zhou.han
+ * @Date 2025/3/15 18:44
+ * @description: Read MySQL CDC binlog data to kafka topics Task-03
  * TODO 该任务，修复了之前SQL的代码逻辑，在之前的逻辑中使用了FlinkSQL的方法进行了实现，把去重的问题，留给了下游的DWS，这种行为非常的yc
  * TODO Before FlinkSQL Left join and use hbase look up join func ,left join 产生的2条异常数据，会在下游做处理，一条为null，一条为未关联上的数据
  * TODO After FlinkAPI Async and google guava cache
+ * Demo Data
+ * 1 null
+ * null
+ * 1,1.1
  */
 public class DbusDBCommentFactData2Kafka {
 

@@ -4,7 +4,12 @@ import lombok.SneakyThrows;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-
+/**
+ * @Package com.stream.FlinkNcMessage
+ * @Author zhou.han
+ * @Date 2024/12/17 15:06
+ * @description: Test Nc Jar
+ */
 public class FlinkNcMessage {
 
     @SneakyThrows

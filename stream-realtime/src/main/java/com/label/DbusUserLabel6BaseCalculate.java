@@ -17,7 +17,12 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 
 import java.util.Date;
 
-
+/**
+ * @Package com.label.DbusUserLabel6BaseCalculate
+ * @Author zhou.han
+ * @Date 2025/5/15 15:32
+ * @description: Task 02
+ */
 public class DbusUserLabel6BaseCalculate {
     private static final String kafka_botstrap_servers = ConfigUtils.getString("kafka.bootstrap.servers");
     private static final String kafka_label_base6_topic = ConfigUtils.getString("kafka.result.label.base6.topic");
