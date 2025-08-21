@@ -15,6 +15,7 @@ mysql.timezone=Asia/Shanghai
 mysql.database=steam
 mysql.user=root
 mysql.pwd=root
+mysql.databases.conf=realtime_v1_config
 
 # Redis 本地配置
 redis.host=localhost
@@ -39,3 +40,5 @@ zookeeper.server.host.list=cdh01:2181
 holo.endpoint=
 ali.key=
 ali.pwd=
+
+

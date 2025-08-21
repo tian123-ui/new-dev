@@ -323,11 +323,11 @@
             <!--            <scope>provided</scope>-->
         </dependency>
 
-        <dependency>
-            <groupId>com.zh</groupId>
-            <artifactId>data-encryption</artifactId>
-            <version>1.0-RELEASE</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.zh</groupId>-->
+<!--            <artifactId>data-encryption</artifactId>-->
+<!--            <version>1.0-RELEASE</version>-->
+<!--        </dependency>-->
 
 
     </dependencies>

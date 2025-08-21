@@ -114,3 +114,4 @@ public class DbusCdc2DimHbaseAnd2DbKafka {
     }
 
 }
+//dim 层成功创建

@@ -26,8 +26,6 @@ import java.util.HashMap;
 /**
  * kafka 数据处理 分流
  */
-
-
 public class DbusLogDataProcess2Kafka {
 
     private static final String kafka_topic_base_log_data = ConfigUtils.getString("REALTIME.KAFKA.LOG.TOPIC");
