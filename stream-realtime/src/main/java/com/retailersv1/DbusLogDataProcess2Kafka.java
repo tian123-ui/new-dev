@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 /**
- * kafka 数据处理 分流
+ * kafka 数据处理 分流.
  */
 public class DbusLogDataProcess2Kafka {
 
